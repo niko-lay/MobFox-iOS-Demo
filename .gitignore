@@ -1,0 +1,6 @@
+*.pbxuser
+!default.pbxuser
+xcuserdata
+*.hmap
+*.ipa
+*.xcuserstate

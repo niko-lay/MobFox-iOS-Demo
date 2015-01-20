@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		906232E31A5D38AD000AC74F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906232E21A5D38AD000AC74F /* AppDelegate.swift */; };
+		906232E51A5D38AD000AC74F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906232E41A5D38AD000AC74F /* ViewController.swift */; };
+		906232E81A5D38AD000AC74F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906232E61A5D38AD000AC74F /* Main.storyboard */; };
+		906232EA1A5D38AD000AC74F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 906232E91A5D38AD000AC74F /* Images.xcassets */; };
+		906232ED1A5D38AD000AC74F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 906232EB1A5D38AD000AC74F /* LaunchScreen.xib */; };
+		9062330F1A5D3C4B000AC74F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 906233061A5D3C4B000AC74F /* LICENSE */; };
+		906233101A5D3C4B000AC74F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 906233071A5D3C4B000AC74F /* LICENSE.txt */; };
+		906233111A5D3C4B000AC74F /* MPAdBrowserController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 906233081A5D3C4B000AC74F /* MPAdBrowserController.nib */; };
+		906233121A5D3C4B000AC74F /* MPCloseButtonX.png in Resources */ = {isa = PBXBuildFile; fileRef = 906233091A5D3C4B000AC74F /* MPCloseButtonX.png */; };
+		906233131A5D3C4B000AC74F /* MPCloseButtonX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9062330A1A5D3C4B000AC74F /* MPCloseButtonX@2x.png */; };
+		906233141A5D3C4B000AC74F /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9062330B1A5D3C4B000AC74F /* MRAID.bundle */; };
+		906233151A5D3C4B000AC74F /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 9062330C1A5D3C4B000AC74F /* README.markdown */; };
+		906233161A5D3C4B000AC74F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9062330D1A5D3C4B000AC74F /* README.md */; };
+		906233171A5D3C9A000AC74F /* MobFox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906233041A5D3C4B000AC74F /* MobFox.framework */; };
+		9062331D1A5D65BB000AC74F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9062331C1A5D65BB000AC74F /* AudioToolbox.framework */; };
+		9062331F1A5D65C1000AC74F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9062331E1A5D65C1000AC74F /* AVFoundation.framework */; };
+		906233211A5D65C7000AC74F /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906233201A5D65C7000AC74F /* iAd.framework */; };
+		906233231A5D65CE000AC74F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906233221A5D65CE000AC74F /* StoreKit.framework */; };
+		906233251A5D65D6000AC74F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906233241A5D65D6000AC74F /* SystemConfiguration.framework */; };
+		906233271A5D65DD000AC74F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906233261A5D65DD000AC74F /* MessageUI.framework */; };
+		906233291A5D65E4000AC74F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906233281A5D65E4000AC74F /* CoreTelephony.framework */; };
+		9062332C1A5D65ED000AC74F /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9062332A1A5D65ED000AC74F /* EventKit.framework */; };
+		9062332D1A5D65ED000AC74F /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9062332B1A5D65ED000AC74F /* EventKitUI.framework */; };
+		9062332F1A5D65F4000AC74F /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9062332E1A5D65F4000AC74F /* AdSupport.framework */; };
+		906233311A5D65F9000AC74F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906233301A5D65F9000AC74F /* UIKit.framework */; };
+		906233331A5D6601000AC74F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906233321A5D6601000AC74F /* CoreLocation.framework */; };
+		906233351A5D660E000AC74F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906233341A5D660E000AC74F /* MediaPlayer.framework */; };
+		906233371A5D6616000AC74F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906233361A5D6616000AC74F /* Foundation.framework */; };
+		906233391A5D661B000AC74F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906233381A5D661B000AC74F /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		906232DD1A5D38AD000AC74F /* MobFoxSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobFoxSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		906232E11A5D38AD000AC74F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		906232E21A5D38AD000AC74F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		906232E41A5D38AD000AC74F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		906232E71A5D38AD000AC74F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		906232E91A5D38AD000AC74F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		906232EC1A5D38AD000AC74F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		906233041A5D3C4B000AC74F /* MobFox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFox.framework; sourceTree = "<group>"; };
+		906233061A5D3C4B000AC74F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		906233071A5D3C4B000AC74F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		906233081A5D3C4B000AC74F /* MPAdBrowserController.nib */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = MPAdBrowserController.nib; sourceTree = "<group>"; };
+		906233091A5D3C4B000AC74F /* MPCloseButtonX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseButtonX.png; sourceTree = "<group>"; };
+		9062330A1A5D3C4B000AC74F /* MPCloseButtonX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseButtonX@2x.png"; sourceTree = "<group>"; };
+		9062330B1A5D3C4B000AC74F /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
+		9062330C1A5D3C4B000AC74F /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		9062330D1A5D3C4B000AC74F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		906233181A5D4088000AC74F /* MobFoxSwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobFoxSwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		9062331C1A5D65BB000AC74F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9062331E1A5D65C1000AC74F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		906233201A5D65C7000AC74F /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		906233221A5D65CE000AC74F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		906233241A5D65D6000AC74F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		906233261A5D65DD000AC74F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		906233281A5D65E4000AC74F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9062332A1A5D65ED000AC74F /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		9062332B1A5D65ED000AC74F /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		9062332E1A5D65F4000AC74F /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		906233301A5D65F9000AC74F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		906233321A5D6601000AC74F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		906233341A5D660E000AC74F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		906233361A5D6616000AC74F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		906233381A5D661B000AC74F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		906232DA1A5D38AD000AC74F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906233391A5D661B000AC74F /* CoreGraphics.framework in Frameworks */,
+				906233371A5D6616000AC74F /* Foundation.framework in Frameworks */,
+				906233351A5D660E000AC74F /* MediaPlayer.framework in Frameworks */,
+				906233331A5D6601000AC74F /* CoreLocation.framework in Frameworks */,
+				906233311A5D65F9000AC74F /* UIKit.framework in Frameworks */,
+				9062332F1A5D65F4000AC74F /* AdSupport.framework in Frameworks */,
+				9062332C1A5D65ED000AC74F /* EventKit.framework in Frameworks */,
+				9062332D1A5D65ED000AC74F /* EventKitUI.framework in Frameworks */,
+				906233291A5D65E4000AC74F /* CoreTelephony.framework in Frameworks */,
+				906233271A5D65DD000AC74F /* MessageUI.framework in Frameworks */,
+				906233251A5D65D6000AC74F /* SystemConfiguration.framework in Frameworks */,
+				906233231A5D65CE000AC74F /* StoreKit.framework in Frameworks */,
+				906233211A5D65C7000AC74F /* iAd.framework in Frameworks */,
+				9062331F1A5D65C1000AC74F /* AVFoundation.framework in Frameworks */,
+				9062331D1A5D65BB000AC74F /* AudioToolbox.framework in Frameworks */,
+				906233171A5D3C9A000AC74F /* MobFox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		906232D41A5D38AC000AC74F = {
+			isa = PBXGroup;
+			children = (
+				906233021A5D3C3C000AC74F /* Frameworks */,
+				906232DF1A5D38AD000AC74F /* MobFoxSwiftDemo */,
+				906232DE1A5D38AD000AC74F /* Products */,
+				906233181A5D4088000AC74F /* MobFoxSwiftDemo-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		906232DE1A5D38AD000AC74F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				906232DD1A5D38AD000AC74F /* MobFoxSwiftDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		906232DF1A5D38AD000AC74F /* MobFoxSwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				906232E21A5D38AD000AC74F /* AppDelegate.swift */,
+				906232E41A5D38AD000AC74F /* ViewController.swift */,
+				906232E61A5D38AD000AC74F /* Main.storyboard */,
+				906232E91A5D38AD000AC74F /* Images.xcassets */,
+				906232EB1A5D38AD000AC74F /* LaunchScreen.xib */,
+				906232E01A5D38AD000AC74F /* Supporting Files */,
+			);
+			path = MobFoxSwiftDemo;
+			sourceTree = "<group>";
+		};
+		906232E01A5D38AD000AC74F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				906232E11A5D38AD000AC74F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		906233021A5D3C3C000AC74F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				906233381A5D661B000AC74F /* CoreGraphics.framework */,
+				906233361A5D6616000AC74F /* Foundation.framework */,
+				906233341A5D660E000AC74F /* MediaPlayer.framework */,
+				906233321A5D6601000AC74F /* CoreLocation.framework */,
+				906233301A5D65F9000AC74F /* UIKit.framework */,
+				9062332E1A5D65F4000AC74F /* AdSupport.framework */,
+				9062332A1A5D65ED000AC74F /* EventKit.framework */,
+				9062332B1A5D65ED000AC74F /* EventKitUI.framework */,
+				906233281A5D65E4000AC74F /* CoreTelephony.framework */,
+				906233261A5D65DD000AC74F /* MessageUI.framework */,
+				906233241A5D65D6000AC74F /* SystemConfiguration.framework */,
+				906233221A5D65CE000AC74F /* StoreKit.framework */,
+				906233201A5D65C7000AC74F /* iAd.framework */,
+				9062331E1A5D65C1000AC74F /* AVFoundation.framework */,
+				9062331C1A5D65BB000AC74F /* AudioToolbox.framework */,
+				906233031A5D3C4B000AC74F /* MobFox.embeddedframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		906233031A5D3C4B000AC74F /* MobFox.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				906233041A5D3C4B000AC74F /* MobFox.framework */,
+				906233051A5D3C4B000AC74F /* Resources */,
+			);
+			path = MobFox.embeddedframework;
+			sourceTree = "<group>";
+		};
+		906233051A5D3C4B000AC74F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				906233061A5D3C4B000AC74F /* LICENSE */,
+				906233071A5D3C4B000AC74F /* LICENSE.txt */,
+				906233081A5D3C4B000AC74F /* MPAdBrowserController.nib */,
+				906233091A5D3C4B000AC74F /* MPCloseButtonX.png */,
+				9062330A1A5D3C4B000AC74F /* MPCloseButtonX@2x.png */,
+				9062330B1A5D3C4B000AC74F /* MRAID.bundle */,
+				9062330C1A5D3C4B000AC74F /* README.markdown */,
+				9062330D1A5D3C4B000AC74F /* README.md */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		906232DC1A5D38AD000AC74F /* MobFoxSwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 906232FC1A5D38AD000AC74F /* Build configuration list for PBXNativeTarget "MobFoxSwiftDemo" */;
+			buildPhases = (
+				906232D91A5D38AD000AC74F /* Sources */,
+				906232DA1A5D38AD000AC74F /* Frameworks */,
+				906232DB1A5D38AD000AC74F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobFoxSwiftDemo;
+			productName = MobFoxSwiftTest;
+			productReference = 906232DD1A5D38AD000AC74F /* MobFoxSwiftDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		906232D51A5D38AD000AC74F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = MobFox;
+				TargetAttributes = {
+					906232DC1A5D38AD000AC74F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 906232D81A5D38AD000AC74F /* Build configuration list for PBXProject "MobFoxSwiftDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 906232D41A5D38AC000AC74F;
+			productRefGroup = 906232DE1A5D38AD000AC74F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				906232DC1A5D38AD000AC74F /* MobFoxSwiftDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		906232DB1A5D38AD000AC74F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906232E81A5D38AD000AC74F /* Main.storyboard in Resources */,
+				906233131A5D3C4B000AC74F /* MPCloseButtonX@2x.png in Resources */,
+				906232ED1A5D38AD000AC74F /* LaunchScreen.xib in Resources */,
+				9062330F1A5D3C4B000AC74F /* LICENSE in Resources */,
+				906233101A5D3C4B000AC74F /* LICENSE.txt in Resources */,
+				906233111A5D3C4B000AC74F /* MPAdBrowserController.nib in Resources */,
+				906233141A5D3C4B000AC74F /* MRAID.bundle in Resources */,
+				906232EA1A5D38AD000AC74F /* Images.xcassets in Resources */,
+				906233121A5D3C4B000AC74F /* MPCloseButtonX.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		906232D91A5D38AD000AC74F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906232E51A5D38AD000AC74F /* ViewController.swift in Sources */,
+				906232E31A5D38AD000AC74F /* AppDelegate.swift in Sources */,
+				906233161A5D3C4B000AC74F /* README.md in Sources */,
+				906233151A5D3C4B000AC74F /* README.markdown in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		906232E61A5D38AD000AC74F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				906232E71A5D38AD000AC74F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		906232EB1A5D38AD000AC74F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				906232EC1A5D38AD000AC74F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		906232FA1A5D38AD000AC74F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		906232FB1A5D38AD000AC74F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		906232FD1A5D38AD000AC74F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MobFox.embeddedframework",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MobFoxSwiftDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = MobFoxSwiftDemo;
+				SWIFT_OBJC_BRIDGING_HEADER = "MobFoxSwiftDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		906232FE1A5D38AD000AC74F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MobFox.embeddedframework",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MobFoxSwiftDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = MobFoxSwiftDemo;
+				SWIFT_OBJC_BRIDGING_HEADER = "MobFoxSwiftDemo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		906232D81A5D38AD000AC74F /* Build configuration list for PBXProject "MobFoxSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				906232FA1A5D38AD000AC74F /* Debug */,
+				906232FB1A5D38AD000AC74F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		906232FC1A5D38AD000AC74F /* Build configuration list for PBXNativeTarget "MobFoxSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				906232FD1A5D38AD000AC74F /* Debug */,
+				906232FE1A5D38AD000AC74F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 906232D51A5D38AD000AC74F /* Project object */;
+}
