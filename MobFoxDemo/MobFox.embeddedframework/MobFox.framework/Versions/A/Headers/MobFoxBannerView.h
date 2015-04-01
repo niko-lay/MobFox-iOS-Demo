@@ -39,18 +39,14 @@ enum {
 	NSString *advertisingSection;
 	BOOL bannerLoaded;
 	BOOL bannerViewActionInProgress;
-	UIViewAnimationTransition refreshAnimation;
-	__unsafe_unretained id <MobFoxBannerViewDelegate> delegate;
 
 	BOOL _tapThroughLeavesApp;
 	BOOL _shouldScaleWebView;
 	BOOL _shouldSkipLinkPreflight;
 	BOOL _statusBarWasVisible;
 	NSURL *_tapThroughURL;
-	NSInteger _refreshInterval;
+    NSInteger _refreshInterval;
 	NSTimer *_refreshTimer;
-    BOOL refreshTimerOff;
-    NSString *requestURL;
 
 }
 
@@ -66,6 +62,7 @@ enum {
 @property (nonatomic, readonly, getter=isBannerViewActionInProgress) BOOL bannerViewActionInProgress;
 
 @property (nonatomic, assign) BOOL refreshTimerOff;
+@property (nonatomic, assign) NSInteger customReloadTime;
 @property (nonatomic, retain) UIImage *_bannerImage;
 @property (strong, nonatomic) NSString *requestURL;
 

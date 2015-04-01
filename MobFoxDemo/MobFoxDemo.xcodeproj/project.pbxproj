@@ -17,16 +17,16 @@
 		0FEAB99E15821B590027B46A /* MobFox_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEAB99D15821B590027B46A /* MobFox_Logo.png */; };
 		902483C91A35EA1F00DEF74D /* ConfigurePublisherIdsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 902483C81A35EA1F00DEF74D /* ConfigurePublisherIdsView.xib */; };
 		902483CC1A36E11E00DEF74D /* ConfigurePublishedIdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 902483CB1A36E11E00DEF74D /* ConfigurePublishedIdsViewController.m */; };
-		9024841A1A3B06FF00DEF74D /* MobFox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 902484101A3B06FF00DEF74D /* MobFox.framework */; };
-		9024841B1A3B06FF00DEF74D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 902484121A3B06FF00DEF74D /* LICENSE */; };
-		9024841C1A3B06FF00DEF74D /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 902484131A3B06FF00DEF74D /* LICENSE.txt */; };
-		9024841D1A3B06FF00DEF74D /* MPAdBrowserController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 902484141A3B06FF00DEF74D /* MPAdBrowserController.nib */; };
-		9024841E1A3B06FF00DEF74D /* MPCloseButtonX.png in Resources */ = {isa = PBXBuildFile; fileRef = 902484151A3B06FF00DEF74D /* MPCloseButtonX.png */; };
-		9024841F1A3B06FF00DEF74D /* MPCloseButtonX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 902484161A3B06FF00DEF74D /* MPCloseButtonX@2x.png */; };
-		902484201A3B06FF00DEF74D /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 902484171A3B06FF00DEF74D /* MRAID.bundle */; };
-		902484211A3B06FF00DEF74D /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 902484181A3B06FF00DEF74D /* README.markdown */; };
-		902484221A3B06FF00DEF74D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 902484191A3B06FF00DEF74D /* README.md */; };
-		904F80DF1A15EC4D0027E3EF /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 904F80DE1A15EC4D0027E3EF /* libGoogleAdMobAds.a */; };
+		904E041A1ACBED980080C634 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904E04191ACBED980080C634 /* GoogleMobileAds.framework */; };
+		904E04261ACBF1E70080C634 /* MobFox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904E041C1ACBF1E70080C634 /* MobFox.framework */; };
+		904E04271ACBF1E70080C634 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 904E041E1ACBF1E70080C634 /* LICENSE */; };
+		904E04281ACBF1E70080C634 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 904E041F1ACBF1E70080C634 /* LICENSE.txt */; };
+		904E04291ACBF1E70080C634 /* MPAdBrowserController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 904E04201ACBF1E70080C634 /* MPAdBrowserController.nib */; };
+		904E042A1ACBF1E70080C634 /* MPCloseButtonX.png in Resources */ = {isa = PBXBuildFile; fileRef = 904E04211ACBF1E70080C634 /* MPCloseButtonX.png */; };
+		904E042B1ACBF1E70080C634 /* MPCloseButtonX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 904E04221ACBF1E70080C634 /* MPCloseButtonX@2x.png */; };
+		904E042C1ACBF1E70080C634 /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 904E04231ACBF1E70080C634 /* MRAID.bundle */; };
+		904E042D1ACBF1E70080C634 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 904E04241ACBF1E70080C634 /* README.markdown */; };
+		904E042E1ACBF1E70080C634 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 904E04251ACBF1E70080C634 /* README.md */; };
 		905D81B0184CC1FD007AF71F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CB639E184777D8000F7634 /* SystemConfiguration.framework */; };
 		905D81B1184CC204007AF71F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CB639C1847764E000F7634 /* MessageUI.framework */; };
 		905D81B2184CC20C007AF71F /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CB63941847757D000F7634 /* EventKit.framework */; };
@@ -67,16 +67,16 @@
 		902483C81A35EA1F00DEF74D /* ConfigurePublisherIdsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigurePublisherIdsView.xib; sourceTree = "<group>"; };
 		902483CA1A36E11E00DEF74D /* ConfigurePublishedIdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurePublishedIdsViewController.h; sourceTree = "<group>"; };
 		902483CB1A36E11E00DEF74D /* ConfigurePublishedIdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurePublishedIdsViewController.m; sourceTree = "<group>"; };
-		902484101A3B06FF00DEF74D /* MobFox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFox.framework; sourceTree = "<group>"; };
-		902484121A3B06FF00DEF74D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		902484131A3B06FF00DEF74D /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		902484141A3B06FF00DEF74D /* MPAdBrowserController.nib */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = MPAdBrowserController.nib; sourceTree = "<group>"; };
-		902484151A3B06FF00DEF74D /* MPCloseButtonX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseButtonX.png; sourceTree = "<group>"; };
-		902484161A3B06FF00DEF74D /* MPCloseButtonX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseButtonX@2x.png"; sourceTree = "<group>"; };
-		902484171A3B06FF00DEF74D /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
-		902484181A3B06FF00DEF74D /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
-		902484191A3B06FF00DEF74D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		904F80DE1A15EC4D0027E3EF /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		904E04191ACBED980080C634 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		904E041C1ACBF1E70080C634 /* MobFox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFox.framework; sourceTree = "<group>"; };
+		904E041E1ACBF1E70080C634 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		904E041F1ACBF1E70080C634 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		904E04201ACBF1E70080C634 /* MPAdBrowserController.nib */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = MPAdBrowserController.nib; sourceTree = "<group>"; };
+		904E04211ACBF1E70080C634 /* MPCloseButtonX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseButtonX.png; sourceTree = "<group>"; };
+		904E04221ACBF1E70080C634 /* MPCloseButtonX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseButtonX@2x.png"; sourceTree = "<group>"; };
+		904E04231ACBF1E70080C634 /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
+		904E04241ACBF1E70080C634 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		904E04251ACBF1E70080C634 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9070CB4F1A64076500125324 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9070CB511A650FB500125324 /* MobFox_Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MobFox_Logo@2x.png"; sourceTree = "<group>"; };
 		90A1AF5718FD6C6900F99322 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
@@ -106,18 +106,18 @@
 				90A1AF5A18FD6C9500F99322 /* AVFoundation.framework in Frameworks */,
 				90A1AF5818FD6C6900F99322 /* iAd.framework in Frameworks */,
 				905D81B7184CC226007AF71F /* MediaPlayer.framework in Frameworks */,
-				9024841A1A3B06FF00DEF74D /* MobFox.framework in Frameworks */,
+				904E04261ACBF1E70080C634 /* MobFox.framework in Frameworks */,
 				905D81B6184CC220007AF71F /* CoreLocation.framework in Frameworks */,
 				905D81B5184CC219007AF71F /* AdSupport.framework in Frameworks */,
 				905D81B4184CC212007AF71F /* StoreKit.framework in Frameworks */,
 				905D81B2184CC20C007AF71F /* EventKit.framework in Frameworks */,
-				904F80DF1A15EC4D0027E3EF /* libGoogleAdMobAds.a in Frameworks */,
 				905D81B3184CC20C007AF71F /* EventKitUI.framework in Frameworks */,
 				905D81B1184CC204007AF71F /* MessageUI.framework in Frameworks */,
 				905D81B0184CC1FD007AF71F /* SystemConfiguration.framework in Frameworks */,
 				90CB639918477599000F7634 /* CoreTelephony.framework in Frameworks */,
 				0F19C2561503A1B8002CFB62 /* UIKit.framework in Frameworks */,
 				0F19C2581503A1B8002CFB62 /* Foundation.framework in Frameworks */,
+				904E041A1ACBED980080C634 /* GoogleMobileAds.framework in Frameworks */,
 				0F19C25A1503A1B8002CFB62 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				E3948854160C7045006092B8 /* Default-568h@2x.png */,
-				904F80DE1A15EC4D0027E3EF /* libGoogleAdMobAds.a */,
 				0F19C25B1503A1B8002CFB62 /* MobFoxDemo */,
 				0F19C2541503A1B8002CFB62 /* Frameworks */,
 				0F19C2521503A1B8002CFB62 /* Products */,
@@ -147,7 +146,8 @@
 		0F19C2541503A1B8002CFB62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9024840F1A3B06FF00DEF74D /* MobFox.embeddedframework */,
+				904E041B1ACBF1E70080C634 /* MobFox.embeddedframework */,
+				904E04191ACBED980080C634 /* GoogleMobileAds.framework */,
 				90A1AF5B18FD6C9B00F99322 /* AudioToolbox.framework */,
 				90A1AF5918FD6C9500F99322 /* AVFoundation.framework */,
 				90A1AF5718FD6C6900F99322 /* iAd.framework */,
@@ -201,26 +201,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9024840F1A3B06FF00DEF74D /* MobFox.embeddedframework */ = {
+		904E041B1ACBF1E70080C634 /* MobFox.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
-				902484101A3B06FF00DEF74D /* MobFox.framework */,
-				902484111A3B06FF00DEF74D /* Resources */,
+				904E041C1ACBF1E70080C634 /* MobFox.framework */,
+				904E041D1ACBF1E70080C634 /* Resources */,
 			);
 			path = MobFox.embeddedframework;
 			sourceTree = "<group>";
 		};
-		902484111A3B06FF00DEF74D /* Resources */ = {
+		904E041D1ACBF1E70080C634 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				902484121A3B06FF00DEF74D /* LICENSE */,
-				902484131A3B06FF00DEF74D /* LICENSE.txt */,
-				902484141A3B06FF00DEF74D /* MPAdBrowserController.nib */,
-				902484151A3B06FF00DEF74D /* MPCloseButtonX.png */,
-				902484161A3B06FF00DEF74D /* MPCloseButtonX@2x.png */,
-				902484171A3B06FF00DEF74D /* MRAID.bundle */,
-				902484181A3B06FF00DEF74D /* README.markdown */,
-				902484191A3B06FF00DEF74D /* README.md */,
+				904E041E1ACBF1E70080C634 /* LICENSE */,
+				904E041F1ACBF1E70080C634 /* LICENSE.txt */,
+				904E04201ACBF1E70080C634 /* MPAdBrowserController.nib */,
+				904E04211ACBF1E70080C634 /* MPCloseButtonX.png */,
+				904E04221ACBF1E70080C634 /* MPCloseButtonX@2x.png */,
+				904E04231ACBF1E70080C634 /* MRAID.bundle */,
+				904E04241ACBF1E70080C634 /* README.markdown */,
+				904E04251ACBF1E70080C634 /* README.md */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -276,22 +276,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				904E04281ACBF1E70080C634 /* LICENSE.txt in Resources */,
+				904E042C1ACBF1E70080C634 /* MRAID.bundle in Resources */,
+				904E042B1ACBF1E70080C634 /* MPCloseButtonX@2x.png in Resources */,
 				0F19C2601503A1B8002CFB62 /* InfoPlist.strings in Resources */,
 				0FEAB99E15821B590027B46A /* MobFox_Logo.png in Resources */,
 				E3948855160C7045006092B8 /* Default-568h@2x.png in Resources */,
 				90AC3AC8193C64AD0021402D /* ViewController_iPad.xib in Resources */,
-				9024841E1A3B06FF00DEF74D /* MPCloseButtonX.png in Resources */,
-				902484201A3B06FF00DEF74D /* MRAID.bundle in Resources */,
 				9070CB501A64076500125324 /* Images.xcassets in Resources */,
-				9024841F1A3B06FF00DEF74D /* MPCloseButtonX@2x.png in Resources */,
+				904E042A1ACBF1E70080C634 /* MPCloseButtonX.png in Resources */,
+				904E04271ACBF1E70080C634 /* LICENSE in Resources */,
+				904E04291ACBF1E70080C634 /* MPAdBrowserController.nib in Resources */,
 				90AC3AC7193C64AD0021402D /* NativeAdView_small.xib in Resources */,
 				902483C91A35EA1F00DEF74D /* ConfigurePublisherIdsView.xib in Resources */,
 				9070CB521A650FB500125324 /* MobFox_Logo@2x.png in Resources */,
-				9024841B1A3B06FF00DEF74D /* LICENSE in Resources */,
 				90AC3AC6193C64AD0021402D /* NativeAdView_big.xib in Resources */,
-				9024841C1A3B06FF00DEF74D /* LICENSE.txt in Resources */,
 				90AC3AC9193C64AD0021402D /* ViewController_iPhone.xib in Resources */,
-				9024841D1A3B06FF00DEF74D /* MPAdBrowserController.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,9 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				902484221A3B06FF00DEF74D /* README.md in Sources */,
+				904E042E1ACBF1E70080C634 /* README.md in Sources */,
 				0F19C2621503A1B8002CFB62 /* main.m in Sources */,
-				902484211A3B06FF00DEF74D /* README.markdown in Sources */,
+				904E042D1ACBF1E70080C634 /* README.markdown in Sources */,
 				902483CC1A36E11E00DEF74D /* ConfigurePublishedIdsViewController.m in Sources */,
 				0F19C2661503A1B8002CFB62 /* AppDelegate.m in Sources */,
 				0F19C2691503A1B8002CFB62 /* ViewController.m in Sources */,
@@ -398,6 +398,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MobFoxSDKSource-ccqprjpzvviigadvubezgqpttdph/Build/Products/Debug-iphoneos",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/MobFox.embeddedframework",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MobFoxSDKSource-djqjwqmivcgxlihahurwhfcggskc/Build/Products/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MobFoxDemo/MobFoxDemo-Prefix.pch";
@@ -433,6 +434,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MobFoxSDKSource-ccqprjpzvviigadvubezgqpttdph/Build/Products/Debug-iphoneos",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/MobFox.embeddedframework",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MobFoxSDKSource-djqjwqmivcgxlihahurwhfcggskc/Build/Products/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MobFoxDemo/MobFoxDemo-Prefix.pch";
