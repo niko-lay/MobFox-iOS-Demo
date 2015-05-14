@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@class ImageAsset;
-@class Tracker;
+@class MFImageAsset;
+@class MFTracker;
 @class UIImage;
 
 @interface MobFoxNativeAd : NSObject
@@ -30,7 +30,7 @@ extern NSString * const kImpressionTrackerType;
 @property (nonatomic, strong) NSMutableArray* trackers;
 
 -(void)addTextAsset:(NSString*)text withType:(NSString*)type;
--(void)addImageAsset:(ImageAsset*)asset withType:(NSString*)type;
+-(void)addImageAsset:(MFImageAsset*)asset withType:(NSString*)type;
 -(BOOL)isNativeAdValid;
 
 -(void)handleImpression;
@@ -39,7 +39,7 @@ extern NSString * const kImpressionTrackerType;
 
 @end
 
-@interface ImageAsset : NSObject
+@interface MFImageAsset : NSObject
 @property (nonatomic, strong) NSString* url;
 @property (nonatomic, strong) UIImage* image;
 @property (nonatomic, strong) NSString* width;
@@ -49,7 +49,7 @@ extern NSString * const kImpressionTrackerType;
 
 @end
 
-@interface Tracker : NSObject
+@interface MFTracker : NSObject
 @property (nonatomic, strong) NSString* type;
 @property (nonatomic, strong) NSString* url;
 @end
