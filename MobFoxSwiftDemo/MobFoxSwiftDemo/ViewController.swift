@@ -25,7 +25,6 @@ class ViewController: UIViewController, MobFoxBannerViewDelegate, MobFoxVideoInt
         super.didReceiveMemoryWarning()
     }
     
-
     /*** delegate methods for banner ads ***/
     
     func publisherIdForMobFoxBannerView(banner: MobFoxBannerView!) -> String! {
@@ -33,13 +32,11 @@ class ViewController: UIViewController, MobFoxBannerViewDelegate, MobFoxVideoInt
     }
     
     func mobfoxBannerViewDidLoadMobFoxAd(banner: MobFoxBannerView!) {
-        //position the banner correctly on the screen
-        bannerView.center = CGPointMake(self.view.bounds.size.width/2.0, self.view.bounds.size.height - bannerView.bounds.size.height/2);
+        NSLog("MobFox Banner: loaded");
     }
     
     func mobfoxBannerViewDidLoadRefreshedAd(banner: MobFoxBannerView!) {
-        //position the banner correctly on the screen
-        bannerView.center = CGPointMake(self.view.bounds.size.width/2.0, self.view.bounds.size.height - bannerView.bounds.size.height/2);
+        NSLog("MobFox Banner: refreshed");
     }
     
     func mobfoxBannerView(banner: MobFoxBannerView!, didFailToReceiveAdWithError error: NSError!) {
@@ -75,6 +72,7 @@ class ViewController: UIViewController, MobFoxBannerViewDelegate, MobFoxVideoInt
 
     @IBAction func showBannerAd(sender: AnyObject) {
         if(bannerView == nil) {
+            
             bannerView = MobFoxBannerView(frame: CGRectZero);
             bannerView.allowDelegateAssigmentToRequestAd = false; //use this if you don't want to trigger ad loading when setting delegate and intend to request it it manually
         
@@ -82,8 +80,8 @@ class ViewController: UIViewController, MobFoxBannerViewDelegate, MobFoxVideoInt
         
             bannerView.backgroundColor = UIColor.clearColor();
         
-            self.bannerView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleTopMargin;
-        
+            bannerView.setTranslatesAutoresizingMaskIntoConstraints(false)
+            
             self.view.addSubview(bannerView);
         
             bannerView.requestURL = "http://my.mobfox.com/request.php";
@@ -103,6 +101,15 @@ class ViewController: UIViewController, MobFoxBannerViewDelegate, MobFoxVideoInt
                 bannerView.adspaceStrict = true;
             }
             
+            self.view.addConstraint(NSLayoutConstraint(
+                item:bannerView, attribute:NSLayoutAttribute.CenterX,
+                relatedBy:NSLayoutRelation.Equal, toItem:self.view,
+                attribute:NSLayoutAttribute.CenterX, multiplier:1, constant:0));
+
+            self.view.addConstraint(NSLayoutConstraint(
+                item:bannerView, attribute:NSLayoutAttribute.CenterY,
+                relatedBy:NSLayoutRelation.Equal, toItem:self.view,
+                attribute:NSLayoutAttribute.Bottom,multiplier:1, constant: -CGFloat(bannerView.adspaceHeight/2)));
             
             bannerView.userAge = 22; //optional, sends user's age
             bannerView.userGender = "female"; //optional, sends user's gender (allowed values: "female" and "male")
@@ -116,7 +123,7 @@ class ViewController: UIViewController, MobFoxBannerViewDelegate, MobFoxVideoInt
             
 
         }
-
+        
         bannerView.requestAd(); // Request a Banner Advert manually
     }
 
