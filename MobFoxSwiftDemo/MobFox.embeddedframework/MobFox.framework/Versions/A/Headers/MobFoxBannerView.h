@@ -67,7 +67,7 @@ enum {
 @property (strong, nonatomic) NSString *requestURL;
 
 @property (nonatomic, assign) NSInteger userAge;
-@property (nonatomic, assign) NSString* userGender;
+@property (nonatomic, strong) NSString* userGender;
 @property (nonatomic, retain) NSArray* keywords;
 
 @property (nonatomic, assign) BOOL allowDelegateAssigmentToRequestAd;

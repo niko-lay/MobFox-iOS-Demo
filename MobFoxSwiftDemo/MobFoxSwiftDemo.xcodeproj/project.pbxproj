@@ -7,19 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9013E4AF1B049C0D00AE9025 /* MobFox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9013E4A11B049C0D00AE9025 /* MobFox.framework */; };
-		9013E4B01B049C0D00AE9025 /* fallback_320x480.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 9013E4A31B049C0D00AE9025 /* fallback_320x480.mustache */; };
-		9013E4B11B049C0D00AE9025 /* fallback_320x50.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 9013E4A41B049C0D00AE9025 /* fallback_320x50.mustache */; };
-		9013E4B21B049C0D00AE9025 /* libs.js in Resources */ = {isa = PBXBuildFile; fileRef = 9013E4A51B049C0D00AE9025 /* libs.js */; };
-		9013E4B31B049C0D00AE9025 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9013E4A61B049C0D00AE9025 /* LICENSE */; };
-		9013E4B41B049C0D00AE9025 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9013E4A71B049C0D00AE9025 /* LICENSE.txt */; };
-		9013E4B51B049C0D00AE9025 /* MPAdBrowserControllerMF.nib in Resources */ = {isa = PBXBuildFile; fileRef = 9013E4A81B049C0D00AE9025 /* MPAdBrowserControllerMF.nib */; };
-		9013E4B61B049C0D00AE9025 /* MPCloseButtonX.png in Resources */ = {isa = PBXBuildFile; fileRef = 9013E4A91B049C0D00AE9025 /* MPCloseButtonX.png */; };
-		9013E4B71B049C0D00AE9025 /* MPCloseButtonX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9013E4AA1B049C0D00AE9025 /* MPCloseButtonX@2x.png */; };
-		9013E4B81B049C0D00AE9025 /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9013E4AB1B049C0D00AE9025 /* MRAID.bundle */; };
-		9013E4B91B049C0D00AE9025 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 9013E4AC1B049C0D00AE9025 /* README.markdown */; };
-		9013E4BA1B049C0D00AE9025 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9013E4AD1B049C0D00AE9025 /* README.md */; };
-		9013E4BB1B049C0D00AE9025 /* render_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 9013E4AE1B049C0D00AE9025 /* render_template.html */; };
 		906232E31A5D38AD000AC74F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906232E21A5D38AD000AC74F /* AppDelegate.swift */; };
 		906232E51A5D38AD000AC74F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906232E41A5D38AD000AC74F /* ViewController.swift */; };
 		906232E81A5D38AD000AC74F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906232E61A5D38AD000AC74F /* Main.storyboard */; };
@@ -40,22 +27,22 @@
 		906233351A5D660E000AC74F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906233341A5D660E000AC74F /* MediaPlayer.framework */; };
 		906233371A5D6616000AC74F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906233361A5D6616000AC74F /* Foundation.framework */; };
 		906233391A5D661B000AC74F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906233381A5D661B000AC74F /* CoreGraphics.framework */; };
+		906A6C3A1B05D9EB006E6272 /* MobFox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906A6C2C1B05D9EB006E6272 /* MobFox.framework */; };
+		906A6C3B1B05D9EB006E6272 /* fallback_320x480.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 906A6C2E1B05D9EB006E6272 /* fallback_320x480.mustache */; };
+		906A6C3C1B05D9EB006E6272 /* fallback_320x50.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 906A6C2F1B05D9EB006E6272 /* fallback_320x50.mustache */; };
+		906A6C3D1B05D9EB006E6272 /* libs.js in Resources */ = {isa = PBXBuildFile; fileRef = 906A6C301B05D9EB006E6272 /* libs.js */; };
+		906A6C3E1B05D9EB006E6272 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 906A6C311B05D9EB006E6272 /* LICENSE */; };
+		906A6C3F1B05D9EB006E6272 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 906A6C321B05D9EB006E6272 /* LICENSE.txt */; };
+		906A6C401B05D9EB006E6272 /* MPAdBrowserControllerMF.nib in Resources */ = {isa = PBXBuildFile; fileRef = 906A6C331B05D9EB006E6272 /* MPAdBrowserControllerMF.nib */; };
+		906A6C411B05D9EB006E6272 /* MPCloseButtonX.png in Resources */ = {isa = PBXBuildFile; fileRef = 906A6C341B05D9EB006E6272 /* MPCloseButtonX.png */; };
+		906A6C421B05D9EB006E6272 /* MPCloseButtonX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 906A6C351B05D9EB006E6272 /* MPCloseButtonX@2x.png */; };
+		906A6C431B05D9EB006E6272 /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 906A6C361B05D9EB006E6272 /* MRAID.bundle */; };
+		906A6C441B05D9EB006E6272 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 906A6C371B05D9EB006E6272 /* README.markdown */; };
+		906A6C451B05D9EB006E6272 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 906A6C381B05D9EB006E6272 /* README.md */; };
+		906A6C461B05D9EB006E6272 /* render_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 906A6C391B05D9EB006E6272 /* render_template.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9013E4A11B049C0D00AE9025 /* MobFox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFox.framework; sourceTree = "<group>"; };
-		9013E4A31B049C0D00AE9025 /* fallback_320x480.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fallback_320x480.mustache; sourceTree = "<group>"; };
-		9013E4A41B049C0D00AE9025 /* fallback_320x50.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fallback_320x50.mustache; sourceTree = "<group>"; };
-		9013E4A51B049C0D00AE9025 /* libs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = libs.js; sourceTree = "<group>"; };
-		9013E4A61B049C0D00AE9025 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		9013E4A71B049C0D00AE9025 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		9013E4A81B049C0D00AE9025 /* MPAdBrowserControllerMF.nib */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = MPAdBrowserControllerMF.nib; sourceTree = "<group>"; };
-		9013E4A91B049C0D00AE9025 /* MPCloseButtonX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseButtonX.png; sourceTree = "<group>"; };
-		9013E4AA1B049C0D00AE9025 /* MPCloseButtonX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseButtonX@2x.png"; sourceTree = "<group>"; };
-		9013E4AB1B049C0D00AE9025 /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
-		9013E4AC1B049C0D00AE9025 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
-		9013E4AD1B049C0D00AE9025 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9013E4AE1B049C0D00AE9025 /* render_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = render_template.html; sourceTree = "<group>"; };
 		906232DD1A5D38AD000AC74F /* MobFoxSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobFoxSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		906232E11A5D38AD000AC74F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		906232E21A5D38AD000AC74F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +66,19 @@
 		906233341A5D660E000AC74F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		906233361A5D6616000AC74F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		906233381A5D661B000AC74F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		906A6C2C1B05D9EB006E6272 /* MobFox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobFox.framework; sourceTree = "<group>"; };
+		906A6C2E1B05D9EB006E6272 /* fallback_320x480.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fallback_320x480.mustache; sourceTree = "<group>"; };
+		906A6C2F1B05D9EB006E6272 /* fallback_320x50.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fallback_320x50.mustache; sourceTree = "<group>"; };
+		906A6C301B05D9EB006E6272 /* libs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = libs.js; sourceTree = "<group>"; };
+		906A6C311B05D9EB006E6272 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		906A6C321B05D9EB006E6272 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		906A6C331B05D9EB006E6272 /* MPAdBrowserControllerMF.nib */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = MPAdBrowserControllerMF.nib; sourceTree = "<group>"; };
+		906A6C341B05D9EB006E6272 /* MPCloseButtonX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseButtonX.png; sourceTree = "<group>"; };
+		906A6C351B05D9EB006E6272 /* MPCloseButtonX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseButtonX@2x.png"; sourceTree = "<group>"; };
+		906A6C361B05D9EB006E6272 /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
+		906A6C371B05D9EB006E6272 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		906A6C381B05D9EB006E6272 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		906A6C391B05D9EB006E6272 /* render_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = render_template.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 				906233311A5D65F9000AC74F /* UIKit.framework in Frameworks */,
 				9062332F1A5D65F4000AC74F /* AdSupport.framework in Frameworks */,
 				9062332C1A5D65ED000AC74F /* EventKit.framework in Frameworks */,
-				9013E4AF1B049C0D00AE9025 /* MobFox.framework in Frameworks */,
+				906A6C3A1B05D9EB006E6272 /* MobFox.framework in Frameworks */,
 				9062332D1A5D65ED000AC74F /* EventKitUI.framework in Frameworks */,
 				906233291A5D65E4000AC74F /* CoreTelephony.framework in Frameworks */,
 				906233271A5D65DD000AC74F /* MessageUI.framework in Frameworks */,
@@ -108,34 +108,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9013E4A01B049C0C00AE9025 /* MobFox.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				9013E4A11B049C0D00AE9025 /* MobFox.framework */,
-				9013E4A21B049C0D00AE9025 /* Resources */,
-			);
-			path = MobFox.embeddedframework;
-			sourceTree = "<group>";
-		};
-		9013E4A21B049C0D00AE9025 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				9013E4A31B049C0D00AE9025 /* fallback_320x480.mustache */,
-				9013E4A41B049C0D00AE9025 /* fallback_320x50.mustache */,
-				9013E4A51B049C0D00AE9025 /* libs.js */,
-				9013E4A61B049C0D00AE9025 /* LICENSE */,
-				9013E4A71B049C0D00AE9025 /* LICENSE.txt */,
-				9013E4A81B049C0D00AE9025 /* MPAdBrowserControllerMF.nib */,
-				9013E4A91B049C0D00AE9025 /* MPCloseButtonX.png */,
-				9013E4AA1B049C0D00AE9025 /* MPCloseButtonX@2x.png */,
-				9013E4AB1B049C0D00AE9025 /* MRAID.bundle */,
-				9013E4AC1B049C0D00AE9025 /* README.markdown */,
-				9013E4AD1B049C0D00AE9025 /* README.md */,
-				9013E4AE1B049C0D00AE9025 /* render_template.html */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		906232D41A5D38AC000AC74F = {
 			isa = PBXGroup;
 			children = (
@@ -178,7 +150,7 @@
 		906233021A5D3C3C000AC74F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9013E4A01B049C0C00AE9025 /* MobFox.embeddedframework */,
+				906A6C2B1B05D9EB006E6272 /* MobFox.embeddedframework */,
 				906233381A5D661B000AC74F /* CoreGraphics.framework */,
 				906233361A5D6616000AC74F /* Foundation.framework */,
 				906233341A5D660E000AC74F /* MediaPlayer.framework */,
@@ -196,6 +168,34 @@
 				9062331C1A5D65BB000AC74F /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		906A6C2B1B05D9EB006E6272 /* MobFox.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				906A6C2C1B05D9EB006E6272 /* MobFox.framework */,
+				906A6C2D1B05D9EB006E6272 /* Resources */,
+			);
+			path = MobFox.embeddedframework;
+			sourceTree = "<group>";
+		};
+		906A6C2D1B05D9EB006E6272 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				906A6C2E1B05D9EB006E6272 /* fallback_320x480.mustache */,
+				906A6C2F1B05D9EB006E6272 /* fallback_320x50.mustache */,
+				906A6C301B05D9EB006E6272 /* libs.js */,
+				906A6C311B05D9EB006E6272 /* LICENSE */,
+				906A6C321B05D9EB006E6272 /* LICENSE.txt */,
+				906A6C331B05D9EB006E6272 /* MPAdBrowserControllerMF.nib */,
+				906A6C341B05D9EB006E6272 /* MPCloseButtonX.png */,
+				906A6C351B05D9EB006E6272 /* MPCloseButtonX@2x.png */,
+				906A6C361B05D9EB006E6272 /* MRAID.bundle */,
+				906A6C371B05D9EB006E6272 /* README.markdown */,
+				906A6C381B05D9EB006E6272 /* README.md */,
+				906A6C391B05D9EB006E6272 /* render_template.html */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,19 +255,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9013E4B21B049C0D00AE9025 /* libs.js in Resources */,
-				9013E4B11B049C0D00AE9025 /* fallback_320x50.mustache in Resources */,
+				906A6C3D1B05D9EB006E6272 /* libs.js in Resources */,
+				906A6C3C1B05D9EB006E6272 /* fallback_320x50.mustache in Resources */,
 				906232E81A5D38AD000AC74F /* Main.storyboard in Resources */,
-				9013E4B31B049C0D00AE9025 /* LICENSE in Resources */,
-				9013E4B41B049C0D00AE9025 /* LICENSE.txt in Resources */,
-				9013E4B01B049C0D00AE9025 /* fallback_320x480.mustache in Resources */,
+				906A6C3E1B05D9EB006E6272 /* LICENSE in Resources */,
+				906A6C3F1B05D9EB006E6272 /* LICENSE.txt in Resources */,
+				906A6C3B1B05D9EB006E6272 /* fallback_320x480.mustache in Resources */,
 				906232ED1A5D38AD000AC74F /* LaunchScreen.xib in Resources */,
-				9013E4B51B049C0D00AE9025 /* MPAdBrowserControllerMF.nib in Resources */,
-				9013E4B71B049C0D00AE9025 /* MPCloseButtonX@2x.png in Resources */,
-				9013E4B81B049C0D00AE9025 /* MRAID.bundle in Resources */,
-				9013E4B61B049C0D00AE9025 /* MPCloseButtonX.png in Resources */,
+				906A6C401B05D9EB006E6272 /* MPAdBrowserControllerMF.nib in Resources */,
+				906A6C421B05D9EB006E6272 /* MPCloseButtonX@2x.png in Resources */,
+				906A6C431B05D9EB006E6272 /* MRAID.bundle in Resources */,
+				906A6C411B05D9EB006E6272 /* MPCloseButtonX.png in Resources */,
 				906232EA1A5D38AD000AC74F /* Images.xcassets in Resources */,
-				9013E4BB1B049C0D00AE9025 /* render_template.html in Resources */,
+				906A6C461B05D9EB006E6272 /* render_template.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +280,8 @@
 			files = (
 				906232E51A5D38AD000AC74F /* ViewController.swift in Sources */,
 				906232E31A5D38AD000AC74F /* AppDelegate.swift in Sources */,
-				9013E4BA1B049C0D00AE9025 /* README.md in Sources */,
-				9013E4B91B049C0D00AE9025 /* README.markdown in Sources */,
+				906A6C451B05D9EB006E6272 /* README.md in Sources */,
+				906A6C441B05D9EB006E6272 /* README.markdown in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

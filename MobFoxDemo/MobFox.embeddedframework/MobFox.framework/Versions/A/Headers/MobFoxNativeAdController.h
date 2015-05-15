@@ -34,7 +34,7 @@
 @property (nonatomic, assign) IBOutlet __unsafe_unretained id <MobFoxNativeAdDelegate> delegate;
 @property (nonatomic, assign) BOOL locationAwareAdverts;
 @property (nonatomic, assign) NSInteger userAge;
-@property (nonatomic, assign) NSString* userGender;
+@property (nonatomic, strong) NSString* userGender;
 @property (nonatomic, strong) NSArray* keywords;
 
 @property (nonatomic, strong) NSArray* adTypes;
