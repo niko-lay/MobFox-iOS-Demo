@@ -225,6 +225,16 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
     
 }
 
+- (IBAction)requestInlineVideoAdvert:(id)sender {
+    CGRect  viewRect = CGRectMake(20, 200, 300, 250);
+    InlineVideoAd *adView = [[InlineVideoAd alloc] initWithFrame:viewRect];
+    [self.view addSubview: adView];
+
+    adView.adDelegate = self;
+    
+    [adView loadAd];
+
+}
 
 - (IBAction)requestInterstitialAdvert:(id)sender {
 
@@ -498,5 +508,28 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
 - (void)nativeAdWasShown {
     NSLog(@"Native ad was shown");
 }
+
+
+- (NSString *)publisherIdForInlineVideoAd:(InlineVideoAd *)banner{
+    return  @"80187188f458cfde788d961b6882fd53";
+}
+
+- (void)InlineVideoAdDidLoadMobFoxAd:(InlineVideoAd *)banner{
+   // [self.view addSubview: banner];
+    NSLog(@"success - inline video loaded");
+}
+
+- (void)InlineVideoAdDidFailToReceiveAdWithError:(NSError *)error{
+    NSLog(@"error - inline video failed - %@",error.description);
+}
+
+- (void)InlineVideoAdClosed{
+    NSLog(@"closed");
+}
+
+- (void)InlineVideoAdClicked{
+    NSLog(@"clicked");
+}
+
 
 @end

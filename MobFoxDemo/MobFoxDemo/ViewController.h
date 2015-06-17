@@ -6,10 +6,12 @@
 #import <MobFox/MobFox.h>
 #import "ConfigurePublishedIdsViewController.h"
 
-@interface ViewController : UIViewController <MobFoxVideoInterstitialViewControllerDelegate, MobFoxBannerViewDelegate, MobFoxNativeAdDelegate, UITableViewDelegate, UITableViewDataSource, ConfigurePublisherIdsControllerDelegate>
+@interface ViewController : UIViewController <MobFoxVideoInterstitialViewControllerDelegate, MobFoxBannerViewDelegate, MobFoxNativeAdDelegate, UITableViewDelegate, UITableViewDataSource, ConfigurePublisherIdsControllerDelegate, InlineVideoDelegate>
 
 @property (nonatomic, strong) MobFoxVideoInterstitialViewController *videoInterstitialViewController;
 @property (strong, nonatomic) MobFoxBannerView *bannerView;
+@property (strong, nonatomic)  InlineVideoAd *inlineVideoAd;
+
 @property (strong, nonatomic) UIView *nativeAdView;
 @property (strong, nonatomic) NSMutableArray *tableData;
 @property (strong, nonatomic) MobFoxTableViewHelper *tableViewHelper;
@@ -18,6 +20,7 @@
 
 - (IBAction)requestInterstitialAdvert:(id)sender;
 - (IBAction)requestBannerAdvert:(id)sender;
+- (IBAction)requestInlineVideoAdvert:(id)sender;
 - (IBAction)requestNativeAdvert:(id)sender;
 - (IBAction)showTableViewWithNativeAds:(id)sender;
 - (IBAction)showSingleNativeAd:(id)sender;
