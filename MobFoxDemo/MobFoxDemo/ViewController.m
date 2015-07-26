@@ -227,7 +227,7 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
 }
 
 - (IBAction)requestInlineVideoAdvert:(id)sender {
-    CGRect  viewRect = CGRectMake(00, 200, 320, 50);
+    CGRect  viewRect = CGRectMake(0, 200, 300, 250);
     self.InlineVideoAdView = [[InlineVideoAd alloc] initWithFrame:viewRect];
     [self.view addSubview: self.InlineVideoAdView];
 
