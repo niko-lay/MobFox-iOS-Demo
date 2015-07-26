@@ -18,7 +18,7 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
 
 @synthesize tableNeedsReloadAfterLoadingNativeAd;
 @synthesize videoInterstitialViewController;
-@synthesize bannerView;
+@synthesize htmlBannerView;
 @synthesize loadedNativeAdViews;
 @synthesize nativeAdRequestsInProgress;
 @synthesize loadedNativeAds;
@@ -127,7 +127,7 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
     
     for (UIView *oneView in self.view.subviews)
     {
-        if(oneView == self.bannerView) {
+        if(oneView == self.htmlBannerView) {
             return YES;
         }
     }
@@ -136,12 +136,12 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
 }
 
 - (void)slideOutDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
-    [self.bannerView removeFromSuperview];
-    self.bannerView.delegate = nil;
-    self.bannerView = nil;
+    [self.htmlBannerView removeFromSuperview];
+    self.htmlBannerView.delegate = nil;
+    self.htmlBannerView = nil;
 }
 
-- (void)slideOutBannerView:(MobFoxBannerView *)banner {
+- (void)slideOutBannerView:(MobFoxHTMLBannerView *)banner {
     
     // move banner to below the bottom of screen
     banner.center = CGPointMake(self.view.bounds.size.width/2.0, self.view.bounds.size.height - banner.bounds.size.height/2.0);
@@ -155,7 +155,7 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
     [UIView commitAnimations];
 }
 
-- (void)slideInBannerView:(MobFoxBannerView *)banner {
+- (void)slideInBannerView:(MobFoxHTMLBannerView *)banner {
     
     banner.bounds = CGRectMake(0, 0, self.view.bounds.size.width, banner.bounds.size.height);
     
@@ -174,66 +174,96 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
 
 - (IBAction)requestBannerAdvert:(id)sender {
     
+    
     self.showSingleNativeAdWhenLoaded = NO;
     
-    if (!self.bannerView) {
+    if (!self.htmlBannerView) {
         
-        self.bannerView = [[MobFoxBannerView alloc] initWithFrame:CGRectZero];
+        self.htmlBannerView = [[MobFoxHTMLBannerView alloc] initWithFrame:CGRectZero];
         // size does not matter yet
         
         // Don't trigger an Advert load when setting delegate
-        self.bannerView.allowDelegateAssigmentToRequestAd = NO;
+        self.htmlBannerView.allowDelegateAssigmentToRequestAd = NO;
         
-        self.bannerView.delegate = self;
+        self.htmlBannerView.delegate = self;
         
-        self.bannerView.backgroundColor = [UIColor clearColor];
-        self.bannerView.refreshAnimation = UIViewAnimationTransitionFlipFromLeft;
+        self.htmlBannerView.backgroundColor = [UIColor clearColor];
+        self.htmlBannerView.refreshAnimation = UIViewAnimationTransitionFlipFromLeft;
         
-        self.bannerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+        self.htmlBannerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         
-        [self.view addSubview:self.bannerView];
+        [self.view addSubview:self.htmlBannerView];
     }
 
-    self.bannerView.requestURL = @"http://my.mobfox.com/request.php";
+    self.htmlBannerView.requestURL = @"http://my.mobfox.com/request.php";
     
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] != UIUserInterfaceIdiomPad)
     {
-        self.bannerView.adspaceWidth = 320; //optional, used to set the custom size of banner placement. Without setting it, the SDK will use default sizes (320x50 for iPhone, 728x90 for iPad).
-        self.bannerView.adspaceHeight = 50;
+        self.htmlBannerView.adspaceWidth = 320; //optional, used to set the custom size of banner placement. Without setting it, the SDK will use default sizes (320x50 for iPhone, 728x90 for iPad).
+        self.htmlBannerView.adspaceHeight = 50;
         
-        self.bannerView.adspaceStrict = NO; //optional, tells the server to only supply Adverts that are exactly of desired size. Without setting it, the server could also supply smaller Ads when no ad of desired size is available.
+        self.htmlBannerView.adspaceStrict = NO; //optional, tells the server to only supply Adverts that are exactly of desired size. Without setting it, the server could also supply smaller Ads when no ad of desired size is available.
     }
     else
     {
-        self.bannerView.adspaceWidth = 728;
-        self.bannerView.adspaceHeight = 90;
+        self.htmlBannerView.adspaceWidth = 728;
+        self.htmlBannerView.adspaceHeight = 90;
         
-        self.bannerView.adspaceStrict = YES;
+        self.htmlBannerView.adspaceStrict = YES;
     }
    
     
-    self.bannerView.locationAwareAdverts = YES;
-    [self.bannerView setLocationWithLatitude:235 longitude:178];
+    self.htmlBannerView.locationAwareAdverts = YES;
+    [self.htmlBannerView setLocationWithLatitude:235 longitude:178];
     
-    self.bannerView.userAge = 22; //optional, sends user's age
-    self.bannerView.userGender = @"female"; //optional, sends user's gender (allowed values: "female" and "male")
+    self.htmlBannerView.userAge = 22; //optional, sends user's age
+    self.htmlBannerView.userGender = @"female"; //optional, sends user's gender (allowed values: "female" and "male")
     NSArray* keywords = [NSArray arrayWithObjects:@"cars", @"finance", nil];
-    self.bannerView.keywords = keywords; //optional, to send list of keywords (user interests) to ad server.
+    self.htmlBannerView.keywords = keywords; //optional, to send list of keywords (user interests) to ad server.
 
-    [self.bannerView requestAd]; // Request a Banner Advert
+    [self.htmlBannerView requestAd]; // Request a Banner Advert
     
 }
 
 - (IBAction)requestInlineVideoAdvert:(id)sender {
-    CGRect  viewRect = CGRectMake(20, 200, 300, 250);
-    InlineVideoAd *adView = [[InlineVideoAd alloc] initWithFrame:viewRect];
-    [self.view addSubview: adView];
+    CGRect  viewRect = CGRectMake(00, 200, 320, 50);
+    self.InlineVideoAdView = [[InlineVideoAd alloc] initWithFrame:viewRect];
+    [self.view addSubview: self.InlineVideoAdView];
 
-    adView.adDelegate = self;
+    self.InlineVideoAdView.adDelegate = self;
+    //adView.autoplay = true;
+    self.InlineVideoAdView.skip = false;
     
-    [adView loadAd];
+    [self.InlineVideoAdView loadAd];
 
+}
+
+- (IBAction) requestWaterfallInterAdvert:(id)sender{
+    self.interstitial = [[MobFoxInterstitialViewController alloc] initWithViewController:self];
+    self.interstitial.delegate = self;
+    
+     [self.interstitial requestAd];
+}
+
+- (IBAction) requestWaterfallBannerAdvert:(id)sender{
+    
+    self.banner = [[MobFoxBannerView alloc] init];
+    self.banner.delegate = self;
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] != UIUserInterfaceIdiomPad)
+    {
+        self.banner.adspaceWidth = 320;
+        self.banner.adspaceHeight = 50;
+    }
+    else
+    {
+        self.banner.adspaceWidth = 728;
+        self.banner.adspaceHeight = 90;
+    }
+    
+    [self.view addSubview:self.banner];
+    [self.banner requestAd];
 }
 
 - (IBAction)requestInterstitialAdvert:(id)sender {
@@ -244,7 +274,7 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
         
         // If a BannerView is currently being displayed we should remove it
         if ([self isBannerViewInHiearchy]) {
-            [self slideOutBannerView:self.bannerView];
+            [self slideOutBannerView:self.htmlBannerView];
         }
         
         self.videoInterstitialViewController.requestURL = @"http://my.mobfox.com/request.php";
@@ -404,17 +434,17 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
 
 #pragma mark MobFox BannerView Delegate Methods
 
-- (NSString *)publisherIdForMobFoxBannerView:(MobFoxBannerView *)banner {
+- (NSString *)publisherIdForMobFoxHTMLBannerView:(MobFoxHTMLBannerView *)banner {
     return self.configurePublishedIdsViewController.idForBanners;
 }
 
-- (void)mobfoxBannerViewDidLoadMobFoxAd:(MobFoxBannerView *)banner {
+- (void)mobfoxHTMLBannerViewDidLoadMobFoxAd:(MobFoxHTMLBannerView *)banner {
     NSLog(@"MobFox Banner: did load ad");
     
     [self slideInBannerView:banner];
 }
 
-- (void)mobfoxBannerViewDidLoadRefreshedAd:(MobFoxBannerView *)banner {
+- (void)mobfoxHTMLBannerViewDidLoadRefreshedAd:(MobFoxHTMLBannerView *)banner {
     NSLog(@"MobFox Banner: Received a 'refreshed' advert");
     
     if (![self isBannerViewInHiearchy]) {
@@ -433,14 +463,14 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
     }
 }
 
-- (void)mobfoxBannerView:(MobFoxBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
+- (void)mobfoxBannerView:(MobFoxHTMLBannerView *)htmlBanner didFailToReceiveAdWithError:(NSError *)error {
     
     NSLog(@"MobFox Banner: did fail to load ad: %@", [error localizedDescription]);
     
-    [self slideOutBannerView:bannerView];
+    [self slideOutBannerView:htmlBanner];
 }
 
--(void)mobfoxBannerViewActionWillPresent:(MobFoxBannerView *)banner {
+-(void)mobfoxBannerViewActionWillPresent:(MobFoxHTMLBannerView *)banner {
     NSLog(@"MobFox Banner: will present");
 }
 
@@ -511,8 +541,9 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
 
 
 - (NSString *)publisherIdForInlineVideoAd:(InlineVideoAd *)banner{
-    return  @"80187188f458cfde788d961b6882fd53";
+    return self.configurePublishedIdsViewController.idForInterstitials;
 }
+
 
 - (void)InlineVideoAdDidLoadMobFoxAd:(InlineVideoAd *)banner{
    // [self.view addSubview: banner];
@@ -527,9 +558,39 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
     NSLog(@"closed");
 }
 
+- (void)InlineVideoAdFinished{
+    [self.InlineVideoAdView removeFromSuperview];
+    NSLog(@"finished");
+}
+
 - (void)InlineVideoAdClicked{
     NSLog(@"clicked");
 }
 
+- (NSString*)publisherIdForMobFoxInterstitial {
+    //return @"571118ace0731827a6c7623352f479db";
+    //return @"80187188f458cfde788d961b6882fd53";
+    return self.configurePublishedIdsViewController.idForInterstitials;
+}
+
+- (void)mobfoxInterstitialDidLoad{
+    [self.interstitial showAd];
+}
+
+- (void)mobfoxDidFailToLoadWithError:(NSError *)error{}
+
+- (void)mobfoxInterstitialWillPresent{}
+
+- (void)mobfoxInterstitialActionWillFinish{}
+
+- (NSString *)publisherIdForMobFoxBannerView:(MobFoxBannerView *)banner {
+    return self.configurePublishedIdsViewController.idForBanners;
+}
+
+- (void)mobfoxBannerViewDidLoadMobFoxAd:(MobFoxBannerView *)banner {
+    
+    CGPoint p = CGPointMake(self.view.bounds.size.width/2.0, self.view.bounds.size.height - banner.bounds.size.height/2.0);
+    banner.center = p;
+}
 
 @end

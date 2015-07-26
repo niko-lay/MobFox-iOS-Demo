@@ -25,6 +25,8 @@
 
 - (void)InlineVideoAdClicked;
 
+- (void)InlineVideoAdFinished;
+
 @end
 
 @interface InlineVideoAd : UIWebView
@@ -36,6 +38,16 @@
     @property NSString* latitude;
     @property NSString* demo_gender; //"m/f"
     @property NSString* demo_age;
+    @property NSString* s_subid;
+    @property NSString* sub_name;
+    @property NSString* sub_domain;
+    @property NSString* sub_storeurl;
+    @property NSString* v_dur_min;
+    @property NSString* v_dur_max;
+    @property NSString* r_floor;
+    @property BOOL autoplay;
+    @property BOOL skip;
+
 
 - (NSString *)getIPAddress;
 - (id) initWithFrame:(CGRect)aRect;
