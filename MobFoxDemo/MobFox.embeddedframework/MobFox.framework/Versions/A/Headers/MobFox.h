@@ -5,4 +5,4 @@
 #import "MobFoxBannerView.h"
 #import "MobFoxInterstitialViewController.h"
 #import "MobFoxVASTRequestManager.h"
-#import "InlineVideoAd.h"
+#import "MobFoxInlineVideoAd.h"

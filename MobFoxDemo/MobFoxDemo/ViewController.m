@@ -228,14 +228,14 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
 
 - (IBAction)requestInlineVideoAdvert:(id)sender {
     CGRect  viewRect = CGRectMake(0, 200, 300, 250);
-    self.InlineVideoAdView = [[InlineVideoAd alloc] initWithFrame:viewRect];
-    [self.view addSubview: self.InlineVideoAdView];
+    self.inlineVideoAd = [[MobFoxInlineVideoAd alloc] initWithFrame:viewRect];
+    [self.view addSubview: self.inlineVideoAd];
 
-    self.InlineVideoAdView.adDelegate = self;
+    self.inlineVideoAd.adDelegate = self;
     //adView.autoplay = true;
-    self.InlineVideoAdView.skip = false;
+    self.inlineVideoAd.skip = false;
     
-    [self.InlineVideoAdView loadAd];
+    [self.inlineVideoAd loadAd];
 
 }
 
@@ -540,12 +540,12 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
 }
 
 
-- (NSString *)publisherIdForInlineVideoAd:(InlineVideoAd *)banner{
+- (NSString *)publisherIdForInlineVideoAd:(MobFoxInlineVideoAd *)banner{
     return self.configurePublishedIdsViewController.idForInterstitials;
 }
 
 
-- (void)InlineVideoAdDidLoadMobFoxAd:(InlineVideoAd *)banner{
+- (void)InlineVideoAdDidLoadMobFoxAd:(MobFoxInlineVideoAd *)banner{
    // [self.view addSubview: banner];
     NSLog(@"success - inline video loaded");
 }
@@ -559,7 +559,7 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
 }
 
 - (void)InlineVideoAdFinished{
-    [self.InlineVideoAdView removeFromSuperview];
+    [self.inlineVideoAd removeFromSuperview];
     NSLog(@"finished");
 }
 

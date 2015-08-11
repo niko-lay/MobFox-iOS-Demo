@@ -9,15 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "WebViewJavascriptBridge.h"
 
-@class InlineVideoAd;
+@class MobFoxInlineVideoAd;
 
-@protocol InlineVideoDelegate <UIWebViewDelegate>
+@protocol MobFoxInlineVideoDelegate <UIWebViewDelegate>
 
-- (NSString *)publisherIdForInlineVideoAd:(InlineVideoAd *)banner;
+- (NSString *)publisherIdForInlineVideoAd:(MobFoxInlineVideoAd *)banner;
 
 @optional
 
-- (void)InlineVideoAdDidLoadMobFoxAd:(InlineVideoAd *)banner;
+- (void)InlineVideoAdDidLoadMobFoxAd:(MobFoxInlineVideoAd *)banner;
 
 - (void)InlineVideoAdDidFailToReceiveAdWithError:(NSError *)error;
 
@@ -29,9 +29,9 @@
 
 @end
 
-@interface InlineVideoAd : UIWebView
+@interface MobFoxInlineVideoAd : UIWebView
 
-    @property (nonatomic, assign) id<InlineVideoDelegate> adDelegate;
+    @property (nonatomic, assign) id<MobFoxInlineVideoDelegate> adDelegate;
 
     @property WebViewJavascriptBridge* bridge;
     @property NSString* longitude;
