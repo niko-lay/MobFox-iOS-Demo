@@ -6,3 +6,4 @@
 #import "MobFoxInterstitialViewController.h"
 #import "MobFoxVASTRequestManager.h"
 #import "MobFoxInlineVideoAd.h"
+#import "MobFoxInterstitialVideo.h"

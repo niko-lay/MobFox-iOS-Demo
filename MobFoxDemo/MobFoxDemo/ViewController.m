@@ -227,7 +227,7 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
 }
 
 - (IBAction)requestInlineVideoAdvert:(id)sender {
-    CGRect  viewRect = CGRectMake(0, 200, 300, 250);
+/*    CGRect  viewRect = CGRectMake(0, 200, 300, 250);
     self.inlineVideoAd = [[MobFoxInlineVideoAd alloc] initWithFrame:viewRect];
     [self.view addSubview: self.inlineVideoAd];
 
@@ -235,12 +235,22 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
     //adView.autoplay = true;
     self.inlineVideoAd.skip = false;
     
-    [self.inlineVideoAd loadAd];
+    [self.inlineVideoAd loadAd];*/
+    
+    self.interVideoAd = [[MobFoxInterstitialVideo alloc] initWithMainViewController:self];
+    
+    self.interVideoAd.delegate = self;
+    
+    [self.interVideoAd loadAd];
+    
+  //  [self.interVideoAd
+    
 
 }
 
 - (IBAction) requestWaterfallInterAdvert:(id)sender{
     self.interstitial = [[MobFoxInterstitialViewController alloc] initWithViewController:self];
+    
     self.interstitial.delegate = self;
     
      [self.interstitial requestAd];
@@ -539,7 +549,14 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
     NSLog(@"Native ad was shown");
 }
 
-
+- (NSString *)publisherIdForInterstitialVideoAd:(MobFoxInterstitialVideo *)interstitial{
+    NSLog(@">>> requesting pub id for video ad");
+     return self.configurePublishedIdsViewController.idForInterstitials;
+}
+- (void)InterstitialVideoAdDidLoadMobFoxAd:(MobFoxInterstitialVideo *)interstitial{
+    NSLog(@">>> Success inter vid");
+}
+/*
 - (NSString *)publisherIdForInlineVideoAd:(MobFoxInlineVideoAd *)banner{
     return self.configurePublishedIdsViewController.idForInterstitials;
 }
@@ -566,7 +583,7 @@ static int const kNativeAdQueueSize = 3; //number of native ads that will be loa
 - (void)InlineVideoAdClicked{
     NSLog(@"clicked");
 }
-
+*/
 - (NSString*)publisherIdForMobFoxInterstitial {
     //return @"571118ace0731827a6c7623352f479db";
     //return @"80187188f458cfde788d961b6882fd53";

@@ -11,7 +11,7 @@
 
 @class MobFoxInlineVideoAd;
 
-@protocol MobFoxInlineVideoDelegate <UIWebViewDelegate>
+@protocol MobFoxInlineVideoDelegate <NSObject>
 
 - (NSString *)publisherIdForInlineVideoAd:(MobFoxInlineVideoAd *)banner;
 
@@ -50,6 +50,7 @@
 
 
 - (NSString *)getIPAddress;
+- (id) init;
 - (id) initWithFrame:(CGRect)aRect;
 - (void) loadAd;
 

@@ -6,13 +6,17 @@
 #import <MobFox/MobFox.h>
 #import "ConfigurePublishedIdsViewController.h"
 
-@interface ViewController : UIViewController <MobFoxVideoInterstitialViewControllerDelegate, MobFoxHTMLBannerViewDelegate, MobFoxNativeAdDelegate, UITableViewDelegate, UITableViewDataSource, ConfigurePublisherIdsControllerDelegate, MobFoxInlineVideoDelegate,
+@interface ViewController : UIViewController <MobFoxVideoInterstitialViewControllerDelegate, MobFoxHTMLBannerViewDelegate, MobFoxNativeAdDelegate, UITableViewDelegate, UITableViewDataSource, ConfigurePublisherIdsControllerDelegate,
+//MobFoxInlineVideoDelegate,
+    MobFoxInterstitialVideoDelegate,
     MobFoxBannerViewDelegate, MobFoxInterstitialDelegate>
 
 @property (nonatomic, strong) MobFoxVideoInterstitialViewController *videoInterstitialViewController;
 
 @property (strong, nonatomic) MobFoxHTMLBannerView *htmlBannerView;
 @property (strong, nonatomic) MobFoxInlineVideoAd *inlineVideoAd;
+
+@property (strong, nonatomic) MobFoxInterstitialVideo *interVideoAd;
 
 @property (nonatomic, strong) MobFoxBannerView *banner;
 @property (nonatomic, strong) MobFoxInterstitialViewController *interstitial;
