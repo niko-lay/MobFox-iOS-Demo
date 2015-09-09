@@ -31,22 +31,23 @@
 
 @interface MobFoxInlineVideoAd : UIWebView
 
-    @property (nonatomic, assign) id<MobFoxInlineVideoDelegate> adDelegate;
 
-    @property WebViewJavascriptBridge* bridge;
-    @property NSString* longitude;
-    @property NSString* latitude;
-    @property NSString* demo_gender; //"m/f"
-    @property NSString* demo_age;
-    @property NSString* s_subid;
-    @property NSString* sub_name;
-    @property NSString* sub_domain;
-    @property NSString* sub_storeurl;
-    @property NSString* v_dur_min;
-    @property NSString* v_dur_max;
-    @property NSString* r_floor;
-    @property BOOL autoplay;
-    @property BOOL skip;
+    @property (nonatomic, weak) id<MobFoxInlineVideoDelegate> adDelegate;
+
+   
+    @property (nonatomic, copy) NSString* longitude;
+    @property (nonatomic, copy) NSString* latitude;
+    @property (nonatomic, copy) NSString* demo_gender; //"m/f"
+    @property (nonatomic, copy) NSString* demo_age;
+    @property (nonatomic, copy) NSString* s_subid;
+    @property (nonatomic, copy) NSString* sub_name;
+    @property (nonatomic, copy) NSString* sub_domain;
+    @property (nonatomic, copy) NSString* sub_storeurl;
+    @property (nonatomic, copy) NSString* v_dur_min;
+    @property (nonatomic, copy) NSString* v_dur_max;
+    @property (nonatomic, copy) NSString* r_floor;
+    @property (nonatomic, assign) BOOL autoplay;
+    @property (nonatomic, assign) BOOL skip;
 
 
 - (NSString *)getIPAddress;
